@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Virginia Beach</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header class="HomeHeader">
+        <a href="index.html"><img src="Images/757 logo.png" alt="757 logo" class="HomeHeader">
+        </a>
+
+        <ul>
+
+
+            <li> <a href="https://www.funtrivia.com/en/Geography/Virginia-3938.html" target="_blank">FAQ</a></li>
+            <Li><a href="References.html"> References</a></Li>
+            <li><a href="Richmond.html">Richmond</a></li>
+            <li><a href="VaBeach.html">Virginia Beach</a></li>
+            <li><a href="Alexandria.html">Alexandria</a></li>
+            <li><a href="Index.html">Home</a></li>
+
+        </ul>
+    </header>
+
+    <h2>Welcome To Virginia Beach</h2>
+    <p>Virginia Beach, VA, entices visitors with its pristine beaches, stretching along the Atlantic Ocean coastline for
+        miles, making it a premier destination for sun-seekers and water enthusiasts alike. Beyond its sandy shores,
+        Virginia Beach offers a diverse array of attractions, including the iconic Virginia Beach Boardwalk, vibrant
+        nightlife, and a thriving culinary scene featuring fresh seafood and local specialties. With its laid-back
+        atmosphere, natural beauty, and abundance of recreational activities, Virginia Beach promises an unforgettable
+        coastal retreat for visitors of all ages.
+
+    </p>
+
+    </div>
+
+    <div>
+        <h2>Quick Facts about Virginia Beach</h2>
+        <p>
+            - City Population of 455,185 <br>
+
+            - Average income of $45,260(State Average $42,496)
+            <br>
+            - Incorporated in 1906 <br>
+
+            - Offers a suburban environment
+            <br>
+            - Located in the Hampton Roads Region of Virginia <br>
+            (UsNews.com)
+
+        </p>
+    </div>
+    <div>
+        <img src="Images/va beach photo city.jpeg" alt="va beach photo" class="pageimages"> <br>
+        (Stock image shutterstock.com)
+    </div>
+
+    <aside>
+        <h2>About Virginia Beach</h2>
+
+
+        <p>Virginia Beach offers a quintessential coastal experience with its pristine beaches, vibrant boardwalk, and
+            array of recreational activities. Whether you're soaking up the sun on the sandy shores, exploring the
+            bustling boardwalk filled with shops and eateries, or indulging in water sports like surfing or kayaking,
+            Virginia Beach promises a memorable seaside getaway. With its laid-back atmosphere, stunning natural beauty,
+            and abundance of attractions, Virginia Beach is a beloved destination for visitors seeking relaxation and
+            adventure along the Atlantic coast.</p>
+        <p>Virginia's capital is Richmond; its largest city is Virginia Beach.</p>
+
+
+        <h2>Request More info or Schedule a tour?</h2>
+        <form id="contactForm" action="submit.php" method="post" onsubmit="return validateForm()">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Full Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Format: 123-456-7890" required>
+
+            <label for="confirm">Confirm Email:</label>
+            <input type="email" id="confirm" name="confirm" required placeholder="Confirm Email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter Your Message"></textarea>
+
+            <input type="submit" value="Submit">
+            <p id="errorMsg" class="error"></p>
+        </form>
+
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var confirmEmail = document.getElementById("confirm").value;
+
+                if (email !== confirmEmail) {
+                    document.getElementById("errorMsg").innerText = "Email and Confirm Email must match.";
+                    return false;
+                } else {
+                    document.getElementById("errorMsg").innerText = "";
+                    return true;
+                }
+            }
+        </script>
+
+    </aside>
+
+    <div class="clearfix"></div>
+
+
+
+    </section>
+
+
+
+</body>
+
+
+
+
+<footer>
+    <p>&copy; 2024 Tony W Barnes At Western Governor's University. All rights reserved.</p>
+    <nav>
+        <a href="https://www.instagram.com/visitvirginia/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/company/commonwealth-of-virginia/" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/governorva/" target="_blank">Facebook</a>
+    </nav>
+</footer>
+
+</html>

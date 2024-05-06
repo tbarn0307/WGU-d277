@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Alexandria</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header class="HomeHeader">
+        <a href="index.html"><img src="Images/Alexandria va.png" alt="Alexandria logo" class="HomeHeader">
+        </a>
+
+        <ul>
+            <li> <a href="https://www.funtrivia.com/en/Geography/Virginia-3938.html" target="_blank">FAQ</a></li>
+
+            <Li><a href="References.html"> References</a></Li>
+            <li><a href="Richmond.html">Richmond</a></li>
+            <li><a href="VaBeach.html">Virginia Beach</a></li>
+            <li><a href="Alexandria.html">Alexandria</a></li>
+            <li><a href="Index.html">Home</a></li>
+
+
+        </ul>
+    </header>
+
+
+    <h2>Welcome To Alexandria, VA</h2>
+    <p>Alexandria, VA, captivates with its timeless charm, blending historic cobblestone streets with modern amenities
+        seamlessly. Its vibrant cultural scene, encompassing art galleries, theaters, and music venues, offers residents
+        and visitors a wealth of entertainment options. Nestled along the Potomac River, Alexandria's scenic waterfront
+        and abundance of parks provide ample opportunities for outdoor recreation and relaxation, creating a welcoming
+        and vibrant atmosphere for all to enjoy.
+
+    </p>
+
+    <div>
+
+        <h2>Quick Facts About Alexandria</h2>
+        <p>
+            - City Population 155,525 <br>
+            - Average income $71,212(State average $42,496) <br>
+            - Located in the Northern Va Region of Virginia. <br>
+            - Incorporated in 1852 <br>
+            - Alexandria offers a Urban environment
+            <br>(USnews.com)
+
+        </p>
+    </div>
+    </div>
+
+    <div>
+        <img src="Images/Alexandria va.jpeg" alt="city of alexandria" class="pageimages">
+
+    </div>
+
+    <aside>
+        <h2>About Alexandria</h2>
+
+
+        <p>Alexandria, VA, located just south of Washington, D.C., is a historic city with a rich colonial heritage. Its
+            cobblestone streets and well-preserved architecture in Old Town evoke a sense of charm and nostalgia. Beyond
+            its historical significance, Alexandria boasts a vibrant arts scene, with numerous galleries and theaters
+            showcasing local talent. Residents enjoy a high quality of life, with diverse neighborhoods, excellent
+            schools, and abundant recreational opportunities along the Potomac River. With its blend of history,
+            culture, and modern amenities, Alexandria offers something for everyone, making it a captivating destination
+            in the Washington metropolitan area.
+
+
+
+        </p>
+        <p>Alexandria is a beautiful place to live</p>
+        </ul>
+
+        <h2>Request More info or Schedule a tour?</h2>
+        <form id="contactForm" action="submit.php" method="post" onsubmit="return validateForm()">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Full Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Format: 123-456-7890" required>
+
+            <label for="confirm">Confirm Email:</label>
+            <input type="email" id="confirm" name="confirm" required placeholder="Confirm email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter Your Message"></textarea>
+
+            <input type="submit" value="Submit">
+            <p id="errorMsg" class="error"></p>
+        </form>
+
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var confirmEmail = document.getElementById("confirm").value;
+
+                if (email !== confirmEmail) {
+                    document.getElementById("errorMsg").innerText = "Email and Confirm Email must match.";
+                    return false;
+                } else {
+                    document.getElementById("errorMsg").innerText = "";
+                    return true;
+                }
+            }
+        </script>
+
+    </aside>
+
+    <div class="clearfix"></div>
+
+
+
+    </section>
+
+
+</body>
+
+
+</html>
+</body>
+<footer>
+    <p>&copy; 2024 Tony W Barnes At Western Governor's University. All rights reserved.</p>
+    <nav>
+        <a href="https://www.instagram.com/visitvirginia/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/company/commonwealth-of-virginia/" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/governorva/" target="_blank">Facebook</a>
+    </nav>
+</footer>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Virginia</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header class="HomeHeader">
+        <a href="index.html"><img src="Images/Virginia Logo.png" alt="Logo of Va" class="HomeHeader">
+        </a>
+
+        <ul>
+            <li> <a href="https://www.funtrivia.com/en/Geography/Virginia-3938.html" target="_blank">FAQ</a></li>
+
+            <Li><a href="References.html"> References</a></Li>
+            <li><a href="Richmond.html">Richmond</a></li>
+            <li><a href="VaBeach.html">Virginia Beach</a></li>
+            <li><a href="Alexandria.html">Alexandria</a></li>
+            <li><a href="Index.html">Home</a></li>
+
+
+        </ul>
+    </header>
+    <div class="content">
+        <h2>Welcome To Virginia</h2>
+        <p>On behalf of all Virginians we would like to WELCOME you to the Commonwealth State.</p>
+        <p>Virginia is a state located in the southeastern region of the United States. It is known for its rich
+            history, diverse landscape, and vibrant culture. Please browse throught the site and take a look at some of
+            our top cities. <strong>Feel free to schedule a tour!!</strong></p>
+
+        <hr>
+        <h1>Top 10 Cities in Virginia by Population</h1>
+
+        <ol id="Orderedlist">
+            <li>Arlington</li> <br>
+            <li>Virginia Beach</li><br>
+            <li>Norfolk</li><br>
+            <li>Chesapeake</li><br>
+            <li>Richmond</li><br>
+            <li>Newport News</li>
+            <br>
+            <li>Alexandria</li><br>
+            <li>Hampton</li><br>
+            <li>Roanoke</li><br>
+            <li>Portsmouth</li><br>
+            (UsNews.com)
+        </ol>
+
+
+
+    </div>
+
+
+
+    <div>
+        <h2 class="content"> VA at a glance (Top 3 cities by categories)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Average Income</th>
+                    <th>Most Educated</th>
+                    <th>Safest Cities</th>
+                    <th>Top Universities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arlington</td>
+                    <td>Falls Church</td>
+                    <td>Purcellville</td>
+                    <td>University Of Virginia</td>
+                </tr>
+                <tr>
+                    <td>Falls Church</td>
+                    <td>Arlington</td>
+                    <td>Lexington</td>
+                    <td>Virginia Tech</td>
+                </tr>
+                <tr>
+                    <td>Alexandria</td>
+                    <td>Alexandria</td>
+                    <td>Bridgewater</td>
+                    <td>William & Mary</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div>
+
+        <img src="Images/Virginia shape logo.png" alt="Logo of va" class="pageimages">
+        <p>
+            (Stock image shutterstock.com)
+        </p>
+    </div>
+
+
+    <aside>
+        <h2>About Virginia</h2>
+
+
+        <p>Virginia, officially the Commonwealth of Virginia, is a state in the Southeastern and Mid-Atlantic regions of
+            the United States. It is bordered by Maryland to the northeast, the Atlantic Ocean to the southeast, North
+            Carolina and Tennessee to the south, Kentucky to the west, and West Virginia to the northwest. Virginia is
+            the 12th-most populous state in the United States, with over 8.6 million residents.</p>
+        <p>Virginia's capital is Richmond; its largest city is Virginia Beach.</p>
+
+        <h2>Request More info or Schedule a tour?</h2>
+        <form id="contactForm" action="submit.php" method="post" onsubmit="return validateForm()">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Full Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Format: 123-456-7890" required>
+
+            <label for="confirm">Confirm Email:</label>
+            <input type="email" id="confirm" name="confirm" required placeholder="Confirm Email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter Your Message"></textarea>
+
+            <input type="submit" value="Submit">
+            <p id="errorMsg" class="error"></p>
+        </form>
+
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var confirmEmail = document.getElementById("confirm").value;
+
+                if (email !== confirmEmail) {
+                    document.getElementById("errorMsg").innerText = "Email and Confirm Email must match.";
+                    return false;
+                } else {
+                    document.getElementById("errorMsg").innerText = "";
+                    return true;
+                }
+            }
+        </script>
+
+    </aside>
+
+    <div class="clearfix"></div>
+
+
+
+    </section>
+
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Tony W Barnes At Western Governor's University. All rights reserved.</p>
+    <nav>
+        <a href="https://www.instagram.com/visitvirginia/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/company/commonwealth-of-virginia/" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/governorva/" target="_blank">Facebook</a>
+    </nav>
+</footer>
+
+
+</html>

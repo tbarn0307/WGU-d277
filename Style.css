@@ -1,0 +1,171 @@
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li+li {
+    margin-left: 20px;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+
+
+body {
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+
+
+.content {
+    float: left;
+
+    padding: 20px;
+    width: 70%;
+}
+
+
+aside {
+    float: right;
+
+    width: 20%;
+
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+}
+
+#Orderedlist {
+
+    float: left;
+}
+
+#unorderedlist {
+
+    list-style-type: disc;
+}
+
+#unorderedlist2 {
+    list-style-type: disc;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.HomeHeader {
+
+    position: relative;
+    background-color: black;
+}
+
+.pageimages {
+
+    position: absolute;
+    height: 40%;
+    width: 35%;
+}
+
+.reference {
+    margin-bottom: 20px;
+}
+
+.reference h2 {
+    margin-bottom: 5px;
+}
+
+.reference p {
+    margin-top: 5px;
+}

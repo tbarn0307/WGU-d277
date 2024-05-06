@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Richmond</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header class="HomeHeader">
+        <a href="index.html"><img src="Images/RVA logo.png" alt="Richmond Home logo" class="HomeHeader">
+        </a>
+
+        <ul>
+
+            <li> <a href="https://www.funtrivia.com/en/Geography/Virginia-3938.html" target="_blank">FAQ</a></li>
+
+            <Li><a href="References.html"> References</a></Li>
+            <li><a href="Richmond.html">Richmond</a></li>
+            <li><a href="VaBeach.html">Virginia Beach</a></li>
+            <li><a href="Alexandria.html">Alexandria</a></li>
+            <li><a href="Index.html">Home</a></li>
+
+
+        </ul>
+    </header>
+
+
+    <h2>Welcome to the Capital</h2>
+    <p>Richmond, VA, exudes a captivating blend of Southern charm and modern vitality, making it a dynamic and inviting
+        city to explore. With its historic significance as the former capital of the Confederacy, Richmond offers
+        visitors and residents alike a glimpse into America's past through its well-preserved architecture, museums, and
+        monuments. Beyond its historical heritage, Richmond boasts a thriving arts and cultural scene, with numerous
+        galleries, theaters, and festivals showcasing local talent and creativity. From its scenic parks and outdoor
+        recreational opportunities to its diverse dining options and vibrant neighborhoods, Richmond captivates with its
+        endless possibilities and warm hospitality..</p>
+
+    <h3>Quick Facts about Richmond</h3>
+
+    <p>
+        - City Population: 229,395 (2022). <br>
+        - Incorporated in 1742. <br>
+        - Located in the Piedmont Region on Virginia. <br>
+        - Mixture of Urban and Suburban areas. <br>
+        - Average income $34,975 (State average $42,496)
+    <p>
+        (Usnews.com)
+    </p>
+    <hr>
+
+
+    </p>
+
+
+    </div>
+
+
+
+    <div>
+
+        <img src="Images/City of Richmond.jpeg" alt="Richmond City" class="pageimages"> <br>
+        (Stock image Shutterstock.com)
+    </div>
+
+    <aside>
+        <h2>More about Richmond</h2>
+        <p>Richmond, VA, is a captivating blend of historical significance, cultural vibrancy, and modern amenities. As
+            the former capital of the Confederacy, Richmond boasts well-preserved architecture, museums, and monuments
+            that offer a glimpse into America's past. With its thriving arts scene, diverse dining options, and scenic
+            parks along the James River, Richmond beckons visitors with its rich tapestry of experiences and warm
+            Southern hospitality.
+
+
+
+
+        </p>
+
+        <h2>Request More info or Schedule a tour?</h2>
+        <form id="contactForm" action="submit.php" method="post" onsubmit="return validateForm()">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Full Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Format: 123-456-7890" required>
+
+            <label for="confirm">Confirm Email:</label>
+            <input type="email" id="confirm" name="confirm" required placeholder="Confirm Email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+
+            <input type="submit" value="Submit">
+            <p id="errorMsg" class="error"></p>
+        </form>
+
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var confirmEmail = document.getElementById("confirm").value;
+
+                if (email !== confirmEmail) {
+                    document.getElementById("errorMsg").innerText = "Email and Confirm Email must match.";
+                    return false;
+                } else {
+                    document.getElementById("errorMsg").innerText = "";
+                    return true;
+                }
+            }
+        </script>
+
+    </aside>
+
+    <div class="clearfix"></div>
+
+
+
+    </section>
+
+
+</body>
+
+
+
+<footer>
+    <p>&copy; 2024 Tony W Barnes At Western Governor's University. All rights reserved.</p>
+    <nav>
+        <a href="https://www.instagram.com/visitvirginia/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/company/commonwealth-of-virginia/" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/governorva/" target="_blank">Facebook</a>
+    </nav>
+</footer>
+
+
+</html>
